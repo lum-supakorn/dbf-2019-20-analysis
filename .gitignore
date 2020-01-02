@@ -1,2 +1,2 @@
-*.ipynb-checkpoints
+.ipynb-checkpoints/
 __pycache__
