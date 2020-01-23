@@ -10,7 +10,7 @@ def calculate(f, all_subs):
     for count, subs in enumerate(all_subs):
         clear_output()
         print("{}/{}\t{:.2f}%".format(count, n, count * 100 / n))
-        subs["total"] = f.subs(subs)
+        subs["total"] = f.subs(subs).evalf
         all_calc.append(subs)
     print("Sorting...")
     return sorted(all_calc, key=lambda x: x["total"], reverse=True)
